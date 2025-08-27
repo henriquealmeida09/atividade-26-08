@@ -1,11 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Atividade Cascata, Especificidade e outros.</title>
 </head>
 <body>
+    <header>
+        <h1>Atividade Cascata, Especificidade e outros.</h1>
+        <nav>
+<a href="#Cascata">Ver regra da Cascata</a>
+<a href="#Especificidade">Ver regra da Especificidade</a>
+<a href="#Combinação de seletor">Ver regra da Combinação de seletores</a>
+<a href="#Pseudo classes">Ver regra das Pseudos Classes</a>
+<a href="#Displays">Ver regra dos Displays</a>
+<a href="#Elementos por padrão">Ver regra dos Elementos</a>
+<a href="#Margin">Ver regra da Margin, Padding e Border + Shorthand</a>
+<a href="#Box">Ver regra da Box-sizing: Border-box
+        </nav>
+    </header>
+
+    <main>
+<section>
+    <h2 id="Cascata" class="Cascatadois">Regra da Cascata</h2>
+
+    <p>Determina qual estilo será aplicado quando houver conflitos, seguindo esta ordem:</p>
+    <ul>
+    <li>
+    Especificidade do seletor.
+    </li>
+    <li>
+    Ordem do código (último prevalece).
+    </li>
+    </ul>
+</section>
+<section>
+    <h2 id="Especificidade">Regra da Especificidade</h2>
+
+    <p>Define a prioridade de um seletor.Exemplo de pesos:</p>
+    <ul>
+        <li>
+            Inline style: 1000
+        </li>
+        <li>
+            ID: 0100
+        </li>
+        <li>
+            Classe/pseudo-classe: 0010
+        </li>
+        <li>
+            Tag: 0001
+        </li>
+        <p>Quem tiver maior peso, prevalece no site.</p>
+    </ul>
+</section>
+<section>
+    <h2 id="Combinação de seletor"> Regra da combinação de seletores</h2>
+
+    <p>A combinação de seletores no CSS é quando você usa dois ou mais seletores juntos para selecionar elementos de forma mais específica.</p>
+    <ul>
+        <li>
+        .primeiro h1: Qualquer h1 dentro de .primeiro
+        </li>
+        <li>
+        .primeira > h1: Apenas h1 filho direto de .primeira
+        </li>
+        <li>
+        .primeira h1 + h1: h1 logo após outro h1 dentro de .primeira
+        </li>
+    </ul>
+</section>
+<section>
+    <h2 id="Pseudo classes">Regra das pseudo-classes</h2>
+
+    <p>Uma pseudo-classe em CSS é uma palavra-chave que você adiciona a um seletor para estilizar elementos com base em seu estado ou posição.</p>
+    <ul>
+        <li>
+        :first-child: Primeiro filho do pai
+        </li>
+        <li>
+        :last-child: Último filho
+        </li>
+        <li>
+        :nth-child(n): N-ésimo filho
+        </li>
+        <li>
+        :nth-of-type(n): N-ésimo do mesmo tipo
+        </li>
+    </ul>
+</section>
+<section>
+    <h2 id="Displays">Regra dos Displays</h2>
+
+    <p>A propriedade display define como um elemento HTML será exibido na página, se ele ocupa uma linha inteira, se fica ao lado de outros, se se comporta como um container flexível, etc.</p>
     
+    <h3>Display Inline</h3>
+    <ul>
+        <li>
+        Largura:Ocupa apenas o conteúdo.
+        </li>
+        <li>
+        Margin/padding:Apenas horizontal
+        </li>
+        <li>
+        Pode conter elementos dentro dele
+        </li>
+    </ul>
+    <h3>Display Block</h3>
+    <ul>
+        <li>
+        Largura:Ocupa a largura inteira
+        </li>
+        <li>
+        Margin/padding:Todos os lados 
+        </li>
+        <li>
+        Não pode conter elementos dentro dele
+        </li>
+    </ul>
+</section>
+<section>
+    <h2 id="Elementos por padrão">Elementos com display padrão</h2>
+    <p>Display Inline:span, a, strong, em, b, i.</p>
+    <p>Display Block:div, p, h1 a h6, section, article, header, footer, main, ul, ol, li.</p>
+</section>
+<section>
+    <h2 id="Margin">Margin, Padding e Border + Shorthand</h2>
+    <p>Função:</p>
+    <ul>
+        <li>
+        Margin: Espaço externo ao elemento
+        </li>
+        <li>
+        Padding: Espaço interno, entre o conteúdo e a borda
+        </li>
+        <li>
+        Border: Linha ao redor do elemento
+        </li>
+    </ul>
+        <p>Shorthand é a ordem dos valores.</p>
+        <p>Direções Específicas:</p>
+        <ul>
+            <li>
+              margin-top
+            </li>
+            <li>
+                margin-rigth
+            </li>
+            <li>
+                margin-bottom
+            </li>
+            <li>
+                margin-left
+            </li>
+            <li>
+                padding-top
+            </li>
+        </ul>
+</section>
+<section>
+    <h2 id="Box">Utilização da propriedade box-sizing: border-box</h2>
+    <p>A propriedade box-sizing: border-box facilita o controle do tamanho de um elemento, especialmente ao usar padding e border.</p>
+</section>
+    </main>
 </body>
 </html>

@@ -1,0 +1,23 @@
+*{
+    scroll-behavior: smooth;
+}
+h1{
+    color: rgb(16, 16, 119);
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: rgb(28, 148, 148);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+ul,p,li{
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    background: black;
+  padding-inline: 1rem;
+}
+h2,h3{
+    color: red;
+}
